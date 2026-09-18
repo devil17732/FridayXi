@@ -1,0 +1,78 @@
+{
+  "name": "Player",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "credits": {
+      "type": "number",
+      "default": 5
+    },
+    "role": {
+      "type": "string",
+      "enum": [
+        "batsman",
+        "bowler",
+        "all_rounder",
+        "wicket_keeper"
+      ],
+      "default": "all_rounder"
+    },
+    "is_active": {
+      "type": "boolean",
+      "default": true
+    },
+    "matches_played": {
+      "type": "number",
+      "default": 0
+    },
+    "runs_scored": {
+      "type": "number",
+      "default": 0
+    },
+    "balls_faced": {
+      "type": "number",
+      "default": 0
+    },
+    "highest_score": {
+      "type": "number",
+      "default": 0
+    },
+    "fours": {
+      "type": "number",
+      "default": 0
+    },
+    "sixes": {
+      "type": "number",
+      "default": 0
+    },
+    "outs": {
+      "type": "number",
+      "default": 0
+    },
+    "wickets_taken": {
+      "type": "number",
+      "default": 0
+    },
+    "balls_bowled": {
+      "type": "number",
+      "default": 0
+    },
+    "runs_conceded": {
+      "type": "number",
+      "default": 0
+    },
+    "catches": {
+      "type": "number",
+      "default": 0
+    },
+    "run_outs": {
+      "type": "number",
+      "default": 0
+    }
+  },
+  "required": [
+    "name"
+  ]
+}

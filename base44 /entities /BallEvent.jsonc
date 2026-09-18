@@ -1,0 +1,83 @@
+{
+  "name": "BallEvent",
+  "type": "object",
+  "properties": {
+    "match_id": {
+      "type": "string"
+    },
+    "innings": {
+      "type": "number",
+      "default": 1
+    },
+    "batting_team": {
+      "type": "string",
+      "enum": [
+        "a",
+        "b"
+      ]
+    },
+    "over": {
+      "type": "number",
+      "default": 1
+    },
+    "ball": {
+      "type": "number",
+      "default": 1
+    },
+    "batsman_id": {
+      "type": "string"
+    },
+    "bowler_id": {
+      "type": "string"
+    },
+    "runs_bat": {
+      "type": "number",
+      "default": 0
+    },
+    "extra_type": {
+      "type": "string",
+      "enum": [
+        "none",
+        "wide",
+        "no_ball",
+        "dead"
+      ],
+      "default": "none"
+    },
+    "extra_runs": {
+      "type": "number",
+      "default": 0
+    },
+    "total_runs": {
+      "type": "number",
+      "default": 0
+    },
+    "is_wicket": {
+      "type": "boolean",
+      "default": false
+    },
+    "wicket_type": {
+      "type": "string",
+      "enum": [
+        "none",
+        "bowled",
+        "caught",
+        "lbw",
+        "run_out",
+        "stumped",
+        "caught_and_bowled",
+        "hit_wicket"
+      ],
+      "default": "none"
+    },
+    "out_batsman_id": {
+      "type": "string"
+    },
+    "credited_player_id": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "match_id"
+  ]
+}

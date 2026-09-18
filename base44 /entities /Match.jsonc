@@ -1,0 +1,192 @@
+{
+  "name": "Match",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string"
+    },
+    "match_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "start_time": {
+      "type": "string"
+    },
+    "venue": {
+      "type": "string"
+    },
+    "overs_per_side": {
+      "type": "number",
+      "default": 10
+    },
+    "credit_cap": {
+      "type": "number",
+      "default": 100
+    },
+    "wide_no_ball_runs_counted": {
+      "type": "boolean",
+      "default": false
+    },
+    "no_ball_free_hit": {
+      "type": "boolean",
+      "default": false
+    },
+    "free_hit": {
+      "type": "boolean",
+      "default": false
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "draft",
+        "toss",
+        "live",
+        "completed"
+      ],
+      "default": "draft"
+    },
+    "team_a_name": {
+      "type": "string"
+    },
+    "team_b_name": {
+      "type": "string"
+    },
+    "team_a_players": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "team_b_players": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "toss_winner": {
+      "type": "string",
+      "enum": [
+        "a",
+        "b",
+        "pending"
+      ],
+      "default": "pending"
+    },
+    "toss_decision": {
+      "type": "string",
+      "enum": [
+        "bat",
+        "field",
+        "pending"
+      ],
+      "default": "pending"
+    },
+    "batting_first": {
+      "type": "string",
+      "enum": [
+        "a",
+        "b",
+        "none"
+      ],
+      "default": "none"
+    },
+    "innings": {
+      "type": "number",
+      "default": 0
+    },
+    "batting_team": {
+      "type": "string",
+      "enum": [
+        "a",
+        "b",
+        "none"
+      ],
+      "default": "none"
+    },
+    "i1_score": {
+      "type": "number",
+      "default": 0
+    },
+    "i1_wickets": {
+      "type": "number",
+      "default": 0
+    },
+    "i1_balls": {
+      "type": "number",
+      "default": 0
+    },
+    "i2_score": {
+      "type": "number",
+      "default": 0
+    },
+    "i2_wickets": {
+      "type": "number",
+      "default": 0
+    },
+    "i2_balls": {
+      "type": "number",
+      "default": 0
+    },
+    "striker_id": {
+      "type": "string"
+    },
+    "striker_runs": {
+      "type": "number",
+      "default": 0
+    },
+    "striker_balls": {
+      "type": "number",
+      "default": 0
+    },
+    "non_striker_id": {
+      "type": "string"
+    },
+    "non_striker_runs": {
+      "type": "number",
+      "default": 0
+    },
+    "non_striker_balls": {
+      "type": "number",
+      "default": 0
+    },
+    "bowler_id": {
+      "type": "string"
+    },
+    "bowler_runs": {
+      "type": "number",
+      "default": 0
+    },
+    "bowler_balls": {
+      "type": "number",
+      "default": 0
+    },
+    "bowler_wickets": {
+      "type": "number",
+      "default": 0
+    },
+    "last_bowler_id": {
+      "type": "string"
+    },
+    "target": {
+      "type": "number"
+    },
+    "winner": {
+      "type": "string",
+      "enum": [
+        "a",
+        "b",
+        "tie",
+        "none"
+      ],
+      "default": "none"
+    },
+    "result_text": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "title",
+    "team_a_name",
+    "team_b_name"
+  ]
+}
